@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Part 1: Largest Number - Nested if else
+    int a, b, c;
+    cout << "Enter 3 numbers: ";
+    cin >> a >> b >> c;
+
+    if (a >= b) {
+        if (a >= c) {
+            cout << "Largest is " << a << endl;
+        } else {
+            cout << "Largest is " << c << endl;
+        }
+    } else {
+        if (b >= c) {
+            cout << "Largest is " << b << endl;
+        } else {
+            cout << "Largest is " << c << endl;
+        }
+    }
+
+    // Part 2: Positive check + digits count - Yahi tumhari kali screen wala code hai
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num > 0) {
+        cout << "Number is positive" << endl;
+        if (num < 10) {
+            cout << "Number has 1 digit";
+        } else if (num < 100) {
+            cout << "Number has 2 digits";
+        } else if (num < 1000) {
+            cout << "Number has 3 digits";
+        } else {
+            cout << "Number has 4 or more digits";
+        }
+    } else {
+        cout << "Number is not positive";
+    }
+
+    return 0;
+}
