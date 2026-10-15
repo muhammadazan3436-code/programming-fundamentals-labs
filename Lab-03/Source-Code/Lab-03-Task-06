@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+    // Random numbers ke liye
+    srand(time(0));
+
+    int num1 = rand() % 900 + 100; // 100 se 999 tak
+    int num2 = rand() % 900 + 100;
+    int sum = num1 + num2;
+
+    // Problem display
+    cout << "  " << num1 << endl;
+    cout << "+ " << num2 << endl;
+    cout << "-----" << endl;
+
+    cout << "\nPress Enter to see the answer...";
+    cin.get(); // Pause
+
+    // Answer display
+    cout << "\n  " << num1 << endl;
+    cout << "+ " << num2 << endl;
+    cout << "-----" << endl;
+    cout << "  " << sum << endl;
+
+    return 0;
+}
