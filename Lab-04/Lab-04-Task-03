@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int mark;
+    cout << "Enter your Mark: ";
+    cin >> mark;
+
+    if (mark >= 75) {
+        cout << "Your grade is A";
+    } else if (mark >= 60) {
+        cout << "Your grade is B";
+    } else if (mark >= 45) {
+        cout << "Your grade is C";
+    } else if (mark < 30) {
+        cout << "Your grade is D";
+    } else {
+        cout << "Your grade is Fail / E";
+    }
+    return 0;
+}
